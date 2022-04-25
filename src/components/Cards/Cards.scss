@@ -1,0 +1,35 @@
+$radius: 10px;
+
+body {
+  background-image: url('../../assets/img/bg5.png');
+  background-position: center;
+  background-clip: border-box;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.badge {
+  top: 10px;
+  right: 10px;
+}
+
+.character {
+  border-radius: $radius;
+  background-color: white;
+  .character-content {
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    border-left-color: 0;
+    background: linear-gradient(to top, rgb(46, 45, 45), rgba(255, 0, 0, 0));
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(to top, black, rgba(255, 0, 0, 0));
+    }
+  }
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
